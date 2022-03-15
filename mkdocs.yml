@@ -1,6 +1,27 @@
-site_name: My Docs
+site_name: Documentation
 theme:
+  language: ru
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   name: material
   custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: appsechub
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
 extra_css:
   - stylesheets/extra.css
