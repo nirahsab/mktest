@@ -23,8 +23,17 @@ theme:
     - navigation.expand
     - navigation.indexes
     - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
 extra_css:
   - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: 
+        - en
+        - ru
 
 repo_url: https://github.com/andreygladilin/mktest
 repo_name: andreygladilin/mktest
