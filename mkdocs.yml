@@ -26,6 +26,7 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - header.autohide
 extra_css:
   - stylesheets/extra.css
 
@@ -37,4 +38,12 @@ plugins:
 
 repo_url: https://github.com/andreygladilin/mktest
 repo_name: andreygladilin/mktest
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/github 
+      link: https://twitter.com/squidfunk
+
 
