@@ -25,3 +25,7 @@ theme:
     - navigation.top
 extra_css:
   - stylesheets/extra.css
+
+repo_url: https://github.com/andreygladilin/mktest
+repo_name: andreygladilin/mktest
+
