@@ -1,4 +1,22 @@
 site_name: Documentation
+nav:
+  - Общая информация:
+    - gi/index.md
+    - Описание инструмента: gi/tool description.md
+    - gi/user workstation requirements.md
+  - Руководство пользователя:
+    - ug/index.md
+    - Installation: getting-started.md
+    - Creating your site: creating-your-site.md
+    - Publishing your site: publishing-your-site.md
+    - Customization: customization.md
+    - Browser support: browser-support.md
+    - Alternatives: alternatives.md
+    - License: license.md
+    - Changelog:
+      - changelog/index.md
+      - How to upgrade: upgrade.md
+  
 theme:
   language: ru
   logo: assets/logo.png
@@ -31,6 +49,8 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
+  - git-revision-date-localized:
+      type: iso_datetime
   - search:
       lang: 
         - en
