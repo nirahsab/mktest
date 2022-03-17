@@ -10,15 +10,6 @@
     --md-default-fg-color--lightest:    #bbb;
 
     --md-code-fg-color: #666;
-    --md-code-bg-color: hsla(209, 100%, 45%, 0.1);
-
-
-
-  
-    
-   
-
-  }
-  [data-md-color-scheme="slate"] {
-    --md-hue: 210; 
-  }
+    --md-code-bg-color: hsla(209, 100%, 45%, 0.1);}
+[data-md-color-scheme="slate"]{ 
+    --md-hue: 210;}
