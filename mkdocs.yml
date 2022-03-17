@@ -52,7 +52,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-    - search.share
+    - search.shares
 extra_css:
   - stylesheets/extra.css
 
