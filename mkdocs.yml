@@ -1,4 +1,4 @@
-site_name: Docuuumentation
+site_name: Документация
 nav:
   - Общая информация:
     - gi/index.md
