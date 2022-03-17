@@ -7,6 +7,14 @@ nav:
   - Руководство пользователя:
     - ug/index.md
     - ug/work with applications.md
+  - Руководство админстратора:
+    - aag/index.md
+    - aag/installing, running and updating AppSec.Hub.md
+    - Интеграция с инструментами:
+        - aag/integration with tools.md
+        - Интеграция с инструментами разработки ПО: aag/integration with software development tools.md
+  - Руководство админстратора ИБ:
+    - sag/index.md
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
     - Publishing your site: publishing-your-site.md
