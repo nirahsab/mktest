@@ -24,7 +24,7 @@ nav:
     - License: license.md
     - Changelog:
       - changelog/index.md
-      - How to upgrade: upgrade.md
+      - How dto upgrade: upgrade.md
   
 theme:
   language: ru
