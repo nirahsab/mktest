@@ -13,7 +13,7 @@ nav:
     - Интеграция с инструментами:
         - aag/integration with tools.md
         - Интеграция с инструментами разработки ПО: aag/integration with software development tools.md
-  - Руководство админстратора ИБ:
+  - Руководство администратора ИБ:
     - sag/index.md
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
