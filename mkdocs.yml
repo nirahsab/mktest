@@ -55,6 +55,7 @@ theme:
     - search.shares
 extra_css:
   - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
 
 plugins:
 #  - git-revision-date-localized:
@@ -74,4 +75,21 @@ plugins:
 #    - icon: fontawesome/brands/github 
 #      link: https://twitter.com/squidfunk
 
+markdown_extensions:
+  - meta
+  - abbr
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+      use_pygments: false
+      auto_title: true
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
 
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
+  - javascripts/highlight.js

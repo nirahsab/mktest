@@ -1,6 +1,82 @@
 # Установка, запуск и обновление AppSec.Hub
 ## Требования к инфраструктуре
 
+    <?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appsec.android.activity.publicactivity" >
+    <application
+    android:allowBackup="false"
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/app_name" >
+    <!-- Public Activity -->
+    <!-- *** 1 *** Явно указывайте атрибут exported="true" -->
+    <activity
+    android:name=".PublicActivity"
+    android:label="@string/app_name"
+    android:exported="true">
+    <!-- Обьявление intent фильтра для получения неявных Intent'ов с определённым Action -->
+    <intent-filter>
+    <action android:name="com.appsec.android.activity.MY_ACTION" />
+    <category android:name="android.intent.category.DEFAULT" />
+    </intent-filter>
+    </activity>
+    </application>
+    </manifest>
+
+asd
+
+
+    package com.appsec.android.activity.publicactivity;
+    import android.app.Activity;
+    import android.content.Intent;
+    import android.os.Bundle;
+    import android.view.View;
+    import android.widget.Toast;
+    public class PublicActivity extends Activity {
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        // *** 2 *** Проводите проверку и безопасную обработку полученного Intent
+        // Т.к. это public Activity, то возможно что отправителем Intent'a является вредоносное приложение
+        // См.п. "Безопасная обработка входных данных"
+		
+		String param = getIntent().getStringExtra("PARAM");
+    	Toast.makeText(this, String.format("Received param: \"%s\"", param), Toast.LENGTH_LONG).show();
+	}
+	public void onReturnResultClick(View view) {
+		
+		// *** 3 *** Не включайте в Intent результата чувствительную информацию
+		// Т.к. это public Activity, то возможно что получателем Intent'a будет вредоносное приложение
+		Intent intent = new Intent();
+		intent.putExtra("RESULT", "Not Sensitive Info");
+		setResult(RESULT_OK, intent);
+		finish();
+	}
+    }
+
+!!! example "Например"
+    Текст примечания.
+
+        first string
+        first string
+        second string
+
+
+!!! note "Примечание"
+    Текст примечания.
+
+!!! danger "Опасно"
+    Текст предостережения
+
+!!! important "Важно"
+    Важное замечание.
+
+!!! danger highlight blink "Не пытайтесь посторить это в домашних условиях"
+    Вообще важное замечание.
+
+
 Установленные для эксплуатации AppSec.Hub технические средства должны быть совместимы между собой и поддерживать сетевой протокол TCP/IP.
 
 Для работы программы в качестве сервера используется компьютер с операционной системой:
@@ -116,3 +192,5 @@ Linux|64-bit|Centos/RHEL 7 и выше
 
 ## Настройка антивирусной защиты
 На сервере с установленным AppSec.Hub необходимо установить антивирусное программное обеспечение в соответствии с политиками компании в области антивирусной защиты.
+
+--8<-- "includes/abbreviations.md"
