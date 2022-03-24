@@ -7,7 +7,7 @@ nav:
   - Руководство пользователя:
     - ug/index.md
     - ug/work with applications.md
-  - Руководство админстратора:
+  - Руководство администратора:
     - aag/index.md
     - aag/installing, running and updating AppSec.Hub.md
     - Интеграция с инструментами:
