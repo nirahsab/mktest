@@ -6,7 +6,11 @@ nav:
     - gi/user workstation requirements.md
   - Руководство пользователя: 
       - ug/index.md
-      - Работа с приложениями:
+      - Приложения:
+        - Работа с приложениями: ug/work with applications.md
+        - Добавление нового приложения: ug/adding a new application.md
+        - Настройки приложения: ug/application settings.md
+      - Проблемы и дефекты безопасности:
         - ug/work with applications.md
         - Добавление нового приложения: ug/adding a new application.md
         - ug/application settings.md
