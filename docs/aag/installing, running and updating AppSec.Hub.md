@@ -1,6 +1,149 @@
 # Установка, запуск и обновление AppSec.Hub
 ## Требования к инфраструктуре
 
+![Image title](https://dummyimage.com/600x400/){ loading=lazy }
+
+
+<figure markdown>
+  ![Image title](https://dummyimage.com/600x400/){ width="600" }
+  <figcaption>Подпись к рисунку</figcaption>
+</figure>
+
+![Image title](https://dummyimage.com/600x400/eee/aaa){ align=right }
+
+
+![Image title](https://dummyimage.com/600x400/eee/aaa){ align=left }
+
+
+| Method      | Description                          |
+| ----------- | ------------------------------------------------ |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
+
+
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
+
+!!! example
+
+    === "Unordered List"
+
+        ``` markdown title="List, unordered"
+        * Sed sagittis eleifend rutrum
+        * Donec vitae suscipit est
+        * Nulla tempor lobortis orci
+        ```
+
+    === "Ordered List"
+
+        ``` markdown title="List, ordered"
+        1. Sed sagittis eleifend rutrum
+        2. Donec vitae suscipit est
+        3. Nulla tempor lobortis orci
+        ```
+
+
+
+=== "Unordered list"
+
+    * Sed sagittis eleifend rutrum
+    * Donec vitae suscipit est
+    * Nulla tempor lobortis orci
+
+=== "Ordered list"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+
+
+``` title=".browserslistrc"
+--8<--​ ".browserslistrc"
+```
+
+The `#!python range()` function is used to generate a sequence of numbers.
+
+
+``` yaml
+# (1)!
+```
+
+1.  Look ma, less line noise!
+
+
+``` yaml
+theme:
+  features:
+    - content.code.annotate # (1)
+```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
+
+
+
+```
+py title="bubble_sort.py"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+
+``` py
+import tensorflow as tf
+```
+
+
+
+``` { .yaml .annotate }
+# Code block content
+```
+
+
+``` yaml hl_lines="2 3"
+theme:
+  features:
+    - content.code.annotate # (1)
+```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
+
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
+
     <?xml version="1.0" encoding="utf-8"?>
     <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.appsec.android.activity.publicactivity" >
